@@ -35,4 +35,8 @@ index ->        0  1  2  3  4  5  6  7  8  9
 memory -        [] [] [] [] [] [] [] [] [] [] 
 address->       10 11 12 13 14 15 16 17 18 19           
 
-num will point to
+num will point to the base address - 10
+
+initialisation :
+   num = {121,4,54,65,465,45,12,5,765,412165};
+
