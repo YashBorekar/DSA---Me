@@ -31,7 +31,7 @@ Creating an Array -
 Declaration :
    datatype array_name [size] ;
    Ex- int num[10]; it will create space for 10 integer elements.
-index ->        0  1  2  3  4  5  6  7  8  9     
+index ->        0  1  2  3  4  5  6  7  8  9     0-based indexing  
 memory -        [] [] [] [] [] [] [] [] [] [] 
 address->       10 11 12 13 14 15 16 17 18 19           
 
@@ -39,4 +39,36 @@ num will point to the base address - 10
 
 initialisation :
    num = {121,4,54,65,465,45,12,5,765,412165};
+
+// Operating System - Fragmentation  (storage wastage in continuous memory locations)
+
+Behind the scenes :
+int ans = 12;
+
+(handle by compiler) Symbol table - It is used to store variable names 
+which further maps to the address where exact value of variable is stored
+
+ans -> symbol table
+12 -> memory
+
+
+// address of array
+cout<<arrayname OR cout<<&array_name
+
+// 0-based inedxing why?
+
+Ex- int arr[] = {1,2,3,4};
+      index=     0    1    2    3
+                [1]  [2]  [3]  [4]
+      address  104  108  112  116   
+logic - arrayname+index*datatype_size;
+arr[0] 
+- arr+0*4;  // size of int - 4
+- 104+0     // cout<<arr - 104 our predicted address
+- 104;  --> it will point to 104 locations
+
+arr[1] 
+- arr+1*4;  
+- 104+4    
+- 108;  --> it will point to 108 location
 
