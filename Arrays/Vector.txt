@@ -1,0 +1,44 @@
+C++ vector is a dynamic array that stores collection of elements same type in contiguous memory. 
+It has the ability to resize itself automatically when an element is inserted or deleted.
+
+Create a Vector
+std::vector class template in the <vector> header file.
+vector<T> v;
+where T is the type of elements and v is the name assigned to the vector.
+
+   // Creating an empty vector
+    vector<int> v1;
+
+   // Creating a vector of 5 elements from
+   // initializer list
+    vector<int> v1 = {1, 4, 2, 3, 5};
+
+    // initialize 
+    vector<int> arr(10,20,30); 
+    vector<int> arr(10,-1); // 10 elemens all -1
+
+    // vector<int>arr(n); // at runtime creating array of size n; 
+
+    // - accessing elements in vector (0 based indexing)
+    use loops - traverse through each elements v[i]...i++;
+
+   - there is another member method vector at() for safely accessing or updating elements.
+
+    // Insert Elements
+    // Inserting element at the back
+  	v.push_back(element);
+    or
+    // Inserting 'c' at index 1
+  	v.insert(v.begin() + 1, 'c');
+
+    // Finding size 
+    cout << v.size();
+  
+    // Deleting last element 
+  	v.pop_back();
+  
+  	// Deleting element element_name
+  	v.erase(find(v.begin(), v .end(), element_name));
+
+    // if vector empty
+    vector_name.empty
