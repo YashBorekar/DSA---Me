@@ -42,3 +42,5 @@ where T is the type of elements and v is the name assigned to the vector.
 
     // if vector empty
     vector_name.empty
+
+  // vector can make it size double when it's getting filled Fully
