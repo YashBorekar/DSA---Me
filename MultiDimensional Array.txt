@@ -1,0 +1,16 @@
+A multidimensional array is an array with more than one dimension. 
+It means that it can grow in different directions i.e. 
+instead of changing the length only, it can also change in width,
+depth or more.
+
+data_type array_name[s1][s2]...[sn];
+
+// Two dimensional array
+int two_d[2][4];
+
+// Three dimensional array
+int three_d[2][4][8];
+
+For example, consider the below array:
+int arr1[2][4];
+The array int arr[2][4] can store total (2 * 4) = 8 elements (product of its dimensions).
