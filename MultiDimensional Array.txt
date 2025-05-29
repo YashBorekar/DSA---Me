@@ -14,3 +14,38 @@ int three_d[2][4][8];
 For example, consider the below array:
 int arr1[2][4];
 The array int arr[2][4] can store total (2 * 4) = 8 elements (product of its dimensions).
+
+--- 2D array ----
+
+// Declaration
+int arr1[3][4];
+
+// initialisation    
+  int arr1[3][4] = {{5,7,8,1},{2,3,4,9},{1,3,6,8}};
+  
+         0 1 2 3 
+  rows 0|5|7|8|1| 
+       1|2|3|4|9| 
+       2|1|3|6|8|        
+         columns
+
+when we want to work with grid like structure we make use of 2D arrays.
+Storage in memory - 
+Internally its store in the form of linear 1d array.
+- [5,7,8,1,2,3,4,9,2,1,3,6,8] 
+how to acces the element
+suppose we want to acces {7} then how.
+for this we mention array_name[row][columns]; - arr1[0][1] = 7;
+
+how to check its positon in linear array storagre internally
+- [5,7,8,1,2,3,4,9,2,1,3,6,8] - at index 1
+metrices:
+ c - no of columns
+ r- no of rows
+ i - i'th iteration{row}
+ j - j'th iteration{column}
+
+ formula - c*i+j
+ therore , for {7} - 4*0+1 = 1 - correct at index 1
+
+
