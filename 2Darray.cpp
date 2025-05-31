@@ -10,16 +10,17 @@ int main(){
 
     // cout<<arr[1][3]<<endl;
 
+    int sum = 0;
     // row-wise printing
     cout<<"row-wise - ";
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 4; j++)
         {
-            cout<<arr[i][j]<<" ";
+            sum += arr[i][j];
         }
-        // cout<<endl;
     }
+    cout<<"Sum = "<<sum<<endl;
 
     cout<<endl;
     //column-wise 
